@@ -368,3 +368,26 @@
         margin-top: 40px;
 
   }
+
+  
+
+ /* .background {
+  background-image: 
+    linear-gradient(rgba(2, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+} */
+
+
+.back{
+    margin-top: 60px;
+      background-image: 
+    linear-gradient(rgba(2, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("background-image.jpg");
+      height: 500px;
+  width: 100%;
+}
