@@ -231,3 +231,22 @@
 .trem{
     color: #4EBF60;
 }
+
+.four-way{
+    width: 100%;
+    height: 300px;
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.consectetur{
+    width: 40%;
+    height: 300px;
+    
+    color: black;
+    text-align: center;
+}
+.consectetur p{
+    margin-top: 15px;
+}
