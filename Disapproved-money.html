@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      *{
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+
+}
+body{
+   background-color: rgb(7, 11, 24);
+}
+.container{
+  display: flex;
+  
+}
+.left-bar{
+  position: fixed;
+  width: 20%;
+  height: 100vh;
+  overflow: hidden;
+}
+.left-bar h2{
+  font-size: 20px;
+}
+.left-bar a{
+  text-decoration: none;
+}
+.pages{
+  display: flex;
+  margin-left: 30px;
+  color: gray;
+  font-size: 1.1em;
+  padding-top: 100px;
+  gap: 8px;
+}
+.pages i{
+  background-color: transparent;
+}
+.pages1{
+  display: flex;
+  margin-left: 30px;
+  color: gray;
+  font-size: 1em;
+  padding-top: 50px;
+  gap: 8px;
+}
+.left-bar ul a{
+  text-decoration: none;
+}
+.divider {
+  width: 1px;            
+  background: rgb(92, 92, 92);     
+  height: 100vh;    
+  margin-left: 260px;       
+}
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-bar">
+      <a href="dashboard.html"><div class="pages">
+        <i class="fa-solid fa-table-cells"></i>
+        <p>Dashboard</p>
+      </div></a>
+      <a href="approved-money.html"><div class="pages1">
+        <i class="fa-solid fa-sack-dollar"></i>
+       <h4> Approved money</h4>
+      </div></a>
+      <a href="Disapproved-money.html"><div class="pages1">
+        <i class="fa-solid fa-sack-xmark"></i>
+        <p>Disapproved-money</p>
+      </div></a>
+      <a href="Help-center.html"><div class="pages1">
+        <i class="fa-solid fa-headset"></i>
+      <p>  Help center </p>
+      </div></a>
+    </div>
+      <div class="divider"></div>
+    <div class="right-bar">
+    </div>
+  </div>
+ 
+</body>
+</html>

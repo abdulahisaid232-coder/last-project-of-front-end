@@ -1,9 +1,8 @@
 *{
   padding: 0px;
   margin: 0px;
-  overflow: hidden;
-
 }
+.section{}
 .box{
   display: flex;
   justify-content: space-between;
@@ -27,23 +26,25 @@
   border-radius: 50%;
   padding-top: 5px;
 }
-.section{
-    background-color: rgb(7, 11, 24);
-    position: relative;
+body{
+   background-color: #0D1117;
 }
 .container{
   display: flex;
-  
+  height: 100vh;
+  width: 100%;
 }
 .left-bar{
   position: fixed;
   width: 20%;
-  height: 100vh;
-  /* background-color: rgb(17, 11, 29); */
-  overflow: hidden;
+  height: 900vh;
+  border-right: 1px solid gray;
 }
 .left-bar h2{
   font-size: 20px;
+}
+.left-bar a{
+  text-decoration: none;
 }
 .pages{
   display: flex;
@@ -67,9 +68,95 @@
 .left-bar ul a{
   text-decoration: none;
 }
-.divider {
-  width: 1px;            
-  background: rgb(92, 92, 92);     
-  height: 100vh;    
-  margin-left: 260px;       
+.right-bar{
+  width: 79%;
+  margin-left: 20%;
+  height: 150vh;
+}
+.top{
+  display: flex;
+}
+.center{
+  width: 200px;
+  height: 100px;
+  background-color: rgb(28, 32, 43);
+  margin: 20px 20px;
+  border-radius: 20px;
+}
+.center h3{
+  text-align: center;
+  color: white;
+  padding-top:20px ;
+  font-size: 30px;
+}
+.center p{
+  color: gray;
+  text-align: center;
+  padding-top: 10px;
+}
+.bottom{
+  background-color: rgb(28, 32, 43);
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 15px;
+  width: 710px;
+}
+.bottom h1{
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+}
+table{
+  overflow: hidden;
+  border-collapse:collapse;
+}
+table thead th {
+  padding: 10px 20px ;
+  color: gray;
+  font-size: 13px;
+}
+table tbody td{
+  padding: 10px 30px ;
+  color: white;
+  font-size: 15px;
+}
+table tbody tr, table thead tr{
+  border-bottom: 1px solid rgb(43, 48, 61) ;
+}
+table tr:nth-child(1) td:nth-child(5){
+  background-color:   #173a3b;
+  border-radius: 20px;
+  color: #7cb8af;
+  font-size: 0.75rem; 
+  padding: 0px 6px;
+  text-align: center;    
+}
+table tr:nth-child(2) td:nth-child(5){
+  background-color:  #332828;
+  color: #987970;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 0.75rem;
+}
+table tr:nth-child(3) td:nth-child(5){
+  background-color:  #44272e;
+  color: #9e736d;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  text-align: center;
+}
+table tr:nth-child(4) td:nth-child(5){
+  background-color: #173a3b;
+  border-radius: 20px;
+  color: #7cb8af;
+  font-size: 0.75rem;
+  text-align: center;
+}
+#xob{
+  background-color:rgb(28, 32, 43);
+  width: 702px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
 }
