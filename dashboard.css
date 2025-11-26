@@ -1,0 +1,75 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+
+}
+.box{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.box h1{
+  font-size: 20px;
+  font-weight: 200;
+  color: white;
+}
+#div span{
+  font-size: 30px;
+  color: white;
+}
+#div i{
+  background-color: rgb(29, 32, 40);
+  font-size: 15px;
+  color: white;
+  width: 40px;
+  height: 20px;
+  border-radius: 50%;
+  padding-top: 5px;
+}
+.section{
+    background-color: rgb(7, 11, 24);
+    position: relative;
+}
+.container{
+  display: flex;
+  
+}
+.left-bar{
+  position: fixed;
+  width: 20%;
+  height: 100vh;
+  /* background-color: rgb(17, 11, 29); */
+  overflow: hidden;
+}
+.left-bar h2{
+  font-size: 20px;
+}
+.pages{
+  display: flex;
+  margin-left: 30px;
+  color: gray;
+  font-size: 1.1em;
+  padding-top: 100px;
+  gap: 8px;
+}
+.pages i{
+  background-color: transparent;
+}
+.pages1{
+  display: flex;
+  margin-left: 30px;
+  color: gray;
+  font-size: 1em;
+  padding-top: 50px;
+  gap: 8px;
+}
+.left-bar ul a{
+  text-decoration: none;
+}
+.divider {
+  width: 1px;            
+  background: rgb(92, 92, 92);     
+  height: 100vh;    
+  margin-left: 260px;       
+}
