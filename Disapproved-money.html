@@ -25,13 +25,18 @@ body{
   position: fixed;
   width: 20%;
   height: 100vh;
-  overflow: hidden;
+  border-right: 1px solid gray;
 }
 .left-bar h2{
   font-size: 20px;
 }
 .left-bar a{
   text-decoration: none;
+}
+.right-bar{
+  width: 79%;
+  margin-left: 20%;
+  height: 150vh;
 }
 .pages{
   display: flex;
@@ -55,11 +60,30 @@ body{
 .left-bar ul a{
   text-decoration: none;
 }
-.divider {
-  width: 1px;            
-  background: rgb(92, 92, 92);     
-  height: 100vh;    
-  margin-left: 260px;       
+
+.top{
+  display: flex;
+}
+.top a{
+  text-decoration: none;
+}
+.center{
+  width: 200px;
+  height: 100px;
+  background-color: rgb(28, 32, 43);
+  margin: 20px 20px;
+  border-radius: 20px;
+}
+.center h3{
+  text-align: center;
+  color: white;
+  padding-top:20px ;
+  font-size: 30px;
+}
+.center p{
+  color: gray;
+  text-align: center;
+  padding-top: 10px;
 }
     </style>
 </head>
@@ -85,6 +109,20 @@ body{
     </div>
       <div class="divider"></div>
     <div class="right-bar">
+         <div class="top">
+      <a href="approved-money.html"><div class="center">
+        <h3>225</h3>
+        <p>Total Transfer money</p>
+      </div></a>
+      <a href="Disapproved-money.html"><div class="center">
+        <h3>800</h3>
+        <p>pending monet</p>
+      </div></a>
+      <div class="center">
+        <h3>8,450</h3>
+        <p>Total Revenue</p>
+      </div>
+      </div>
     </div>
   </div>
  
