@@ -2,7 +2,7 @@
   padding: 0px;
   margin: 0px;
 }
-.section{}
+
 .box{
   display: flex;
   justify-content: space-between;
@@ -51,19 +51,34 @@ body{
   margin-left: 30px;
   color: gray;
   font-size: 1.1em;
-  padding-top: 100px;
+  align-items: center;
+  align-content: center;
+  margin-top: 100px;
   gap: 8px;
+  
 }
-.pages i{
-  background-color: transparent;
+.pages:hover{
+  background-color: rgb(43, 48, 61);
+  padding: 5px 5px;
+  border-radius: 10px;
+  width: 105px;
+}
+.pages1:hover{
+  background-color: rgb(43, 48, 61);
+  padding: 5px 5px;
+  border-radius: 10px;
+  width: 170px;
 }
 .pages1{
   display: flex;
   margin-left: 30px;
   color: gray;
   font-size: 1em;
-  padding-top: 50px;
+  align-items: center;
+  align-content: center;
+  margin-top: 50px;
   gap: 8px;
+  
 }
 .left-bar ul a{
   text-decoration: none;

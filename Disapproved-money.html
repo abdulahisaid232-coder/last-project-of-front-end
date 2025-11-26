@@ -43,19 +43,34 @@ body{
   margin-left: 30px;
   color: gray;
   font-size: 1.1em;
-  padding-top: 100px;
+  align-items: center;
+  align-content: center;
+  margin-top: 100px;
   gap: 8px;
+  
 }
-.pages i{
-  background-color: transparent;
+.pages:hover{
+  background-color: rgb(43, 48, 61);
+  padding: 5px 5px;
+  border-radius: 10px;
+  width: 105px;
+}
+.pages1:hover{
+  background-color: rgb(43, 48, 61);
+  padding: 5px 5px;
+  border-radius: 10px;
+  width: 170px;
 }
 .pages1{
   display: flex;
   margin-left: 30px;
   color: gray;
   font-size: 1em;
-  padding-top: 50px;
+  align-items: center;
+  align-content: center;
+  margin-top: 50px;
   gap: 8px;
+  
 }
 .left-bar ul a{
   text-decoration: none;
@@ -85,6 +100,63 @@ body{
   text-align: center;
   padding-top: 10px;
 }
+.bottom{
+  background-color: rgb(28, 32, 43);
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 15px;
+  width: 710px;
+}
+.bottom h1{
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+}
+table{
+  overflow: hidden;
+  border-collapse:collapse;
+}
+table thead th {
+  padding: 10px 20px 10px;
+  color: gray;
+  font-size: 13px;
+}
+table tbody td{
+  padding: 10px 30px ;
+  color: white;
+  font-size: 15px;
+}
+table tbody tr, table thead tr{
+  border-bottom: 1px solid rgb(43, 48, 61) ;
+}
+table tr:nth-child(1) td:nth-child(5){
+  background-color:  #332828;
+  color: #987970;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 0.75rem;
+}
+table tr:nth-child(2) td:nth-child(5){
+  background-color:  #332828;
+  color: #987970;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 0.75rem;
+}
+table tr:nth-child(3) td:nth-child(5){
+  background-color:  #332828;
+  color: #987970;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 0.75rem;
+}
+table tr:nth-child(4) td:nth-child(5){
+  background-color:  #332828;
+  color: #987970;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 0.75rem;
+}
     </style>
 </head>
 <body>
@@ -92,7 +164,7 @@ body{
     <div class="left-bar">
       <a href="dashboard.html"><div class="pages">
         <i class="fa-solid fa-table-cells"></i>
-        <p>Dashboard</p>
+        <h4>Dashboard</h4>
       </div></a>
       <a href="approved-money.html"><div class="pages1">
         <i class="fa-solid fa-sack-dollar"></i>
@@ -100,11 +172,11 @@ body{
       </div></a>
       <a href="Disapproved-money.html"><div class="pages1">
         <i class="fa-solid fa-sack-xmark"></i>
-        <p>Disapproved-money</p>
+        <h4>Disapproved-money</h4>
       </div></a>
       <a href="Help-center.html"><div class="pages1">
         <i class="fa-solid fa-headset"></i>
-      <p>  Help center </p>
+      <h4>  Help center </h4>
       </div></a>
     </div>
       <div class="divider"></div>
@@ -123,8 +195,56 @@ body{
         <p>Total Revenue</p>
       </div>
       </div>
+      <div class="bottom">
+        <h1>Recent Appproval money</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Sender</th>
+              <th>Receiver</th>
+              <th>Amount</th>
+              <th>status</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>C2377792</td>
+              <td>cabdalla</td>
+              <td>zakaria</td>
+              <td>$900.00</td>
+              <td>pending</td>
+              <td>2025-07-14</td>
+            </tr>
+            <tr>
+              <td>C2562990</td>
+              <td>A.hakiin</td>
+              <td>deeQo</td>
+              <td>$800.00</td>
+              <td>pending</td>
+              <td>2025-09-11</td>
+            </tr>
+            <tr>
+              <td>C206784</td>
+              <td>ma'iZa</td>
+              <td>Dayax</td>
+              <td>$12,000</td>
+              <td>pending</td>
+              <td>2025-04-30</td>
+            </tr>
+            <tr>
+              <td>C1240236</td>
+              <td>Mohamed</td>
+              <td>Faatma</td>
+              <td>$10,000</td>
+              <td>pending</td>
+              <td>2025-05-01</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
- 
 </body>
 </html>
