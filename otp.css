@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+ background: linear-gradient(135deg, #6b5df0, #3da8ff);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container{
+    background: white;
+    width: 900px;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 40px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-side{
+    width: 30%;
+    background: #f5fafa;
+    padding: 40px 20px;
+    height: 100%;
+}
+
+.left-side h2{
+    margin-bottom: 30px;
+}
+
+.steps{
+    list-style: none;
+}
+
+.steps li{
+    margin: 15px 0;
+    padding: 10px;
+    color: #777;
+}
+
+.steps .active{
+    color: #6b5df0;
+    font-weight: bold;
+}
+
+.right-side{
+    width: 70%;
+    padding: 40px;
+}
+
+h3, h4{
+    margin: 15px 0;
+    color: #444;
+}
+
+.form-group{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-top: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.two-col, .three-col{
+    display: flex;
+    gap: 10px;
+}
+
+.two-col input{
+    width: 50%;
+}
+
+.three-col input{
+    width: 33%;
+}
+
+.full{
+    width: 100%;
+}
+
+.next-btn{
+    background: #6b5df0;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    float: right;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.next-btn:hover{
+    background: #6b5df0;
+}
+
+.can{
+    justify-content: space-between;
+    display: flex;
+}
