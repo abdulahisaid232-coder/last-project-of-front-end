@@ -667,6 +667,8 @@ height: 30px;
 }
 
 .senter{
-    height: 300px;
-    width:50%;
+    height: 500px;
+    width:40%;
+    background-color: #ddd;
 }
+

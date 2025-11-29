@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.parent{
+    width: 100%;
+    height: 500px;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.secure{
+    width: 70%;
+    height: 600px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -300px;
+    align-items: center;
+}
+
+.secure h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+.future{
+    color: #6b5df0;
+}
+
+.secure P{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.secure img {
+    margin-top: 25px;
+}
+
+.phone-section{
+    width: 100%;
+    height: 100vh;
+    /* background-color: blue; */
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: -150px;
+}
+
+.lbox{
+    width: 40%;
+    height: 400px;
+    /* background: #6b5df0; */
+}
+
+
+
+
+.card {
+    width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 40px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.details {
+    flex: 1;
+}
+
+.details h4 {
+    margin: 0;
+    font-size: 15px;
+}
+
+.time {
+    font-size: 12px;
+    color: gray;
+}
+
+.tag {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.send { background: #f5e2ff; color: #000000; }
+.receive { background: #dffceb; color: #1c7c4c; }
+.topup { background: #ffeccb; color: #6b5df0; }
+
+.amount {
+    font-weight: bold;
+}
+
+.plus { color: #1c7c4c; }
+.minus { color: #6b5df0; }
+
+
+.rbox {
+        width: 40%;
+    height: 400px;
+    /* background: #6b5df0; */
+
+}
+
+.rbox img{
+    width: 90%;
+}
+
+.peyment{
+    width: 100%;
+    height: 250px;
+    background-color: #6b5df0;
+    margin-top: -80px;
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boxONE{
+    width: 20%;
+    height: 250PX ;
+    /* background-color: #dffceb; */
+     display: flex;
+    justify-items: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.boxONE img{
+    width: 60%;
+}
