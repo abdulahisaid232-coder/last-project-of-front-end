@@ -9,7 +9,7 @@
 /* ===== MENU ===== */
 .menu {
   background-color: #6b5df0;
-  height: 150px;
+  height: 100px;
   width: 100%;
   color: white;
  
@@ -29,10 +29,19 @@
   gap: 50px;
   font-size: 18px;
   list-style: none;
+  text-decoration: none;
 }
 
 .menu ul li {
   cursor: pointer;
+  text-decoration: none;
+}
+
+a li {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    
 }
 
 .menu-button {
@@ -638,4 +647,26 @@ height: 30px;
     margin-top: 30px;
     border-top: 1px solid #ddd;
     font-size: 14px;
+}
+
+
+
+/* login page */
+
+.from{
+  width: 100%;
+  height: 100vh;       
+  background: linear-gradient(135deg, #6b5df0, #3da8ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: -150px; 
+  gap: 30px;
+     
+}
+
+.senter{
+    height: 300px;
+    width:50%;
 }
