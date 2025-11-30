@@ -1,0 +1,161 @@
+body{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+
+body {
+background:#6b5df0;
+color: #2600ff;
+line-height: 1.5;
+}
+
+.page {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+padding: 20px;
+}
+
+.card {
+display: flex;
+flex-wrap: wrap;
+max-width: 900px;
+background: #fff;
+border-radius: 10px;
+box-shadow: 0 8px 20px rgba(204, 20, 20, 0.1);
+overflow: hidden;
+}
+
+.side {
+flex: 1 1 250px;
+background: #f2f4f7;
+color: #fff;
+padding: 30px 20px;
+}
+
+.brand {
+font-size: 24px;
+margin-bottom: 40px;
+color: #0097e6;
+}
+
+.steps {
+display: flex;
+flex-direction: column;
+}
+
+.step {
+color: #ccc;
+text-decoration: none;
+margin-bottom: 15px;
+font-weight: 500;
+transition: 0.3s;
+}
+
+.step.active,
+.step {
+color: #00a8ff;
+font-size: 17px;
+}
+
+.form-wrap {
+flex: 2 1 400px;
+padding: 40px 30px;
+}
+
+.title {
+font-size: 22px;
+margin-bottom: 10px;
+color: #2f3640;
+text-transform: capitalize;
+}
+
+.subtitle {
+font-size: 14px;
+margin-bottom: 25px;
+color: #718093;
+}
+
+.verify-form .form-row {
+margin-bottom: 20px;
+}
+
+.input-label {
+display: block;
+margin-bottom: 6px;
+font-weight: 600;
+}
+
+.text-input, .select-input, .file-input {
+width: 100%;
+padding: 10px 12px;
+border-radius: 6px;
+border: 1px solid #dcdde1;
+font-size: 14px;
+}
+
+.file-row {
+display: flex;
+gap: 15px;
+flex-wrap: wrap;
+}
+
+.notice {
+margin-bottom: 20px;
+font-size: 12px;
+color: #e84118;
+}
+
+.actions {
+display: flex;
+justify-content: space-between;
+gap: 10px;
+}
+
+.btn {
+padding: 10px 20px;
+border-radius: 6px;
+font-weight: 600;
+cursor: pointer;
+border: none;
+transition: 0.3s;
+}
+
+.btn.primary {
+background: #00a8ff;
+color: #fff;
+}
+
+.btn.primary {
+background: #0097e6;
+}
+
+.btn.outline {
+background: #fff;
+border: 1px solid #00a8ff;
+color: #00a8ff;
+}
+
+.btn.outline {
+background: #00a8ff;
+color: #fff;
+}
+
+/* @media (max-width: 768px) {
+.card {
+flex-direction: column;
+}
+.side {
+flex: 1 1 100%;
+text-align: center;
+}
+.form-wrap {
+flex: 1 1 100%;
+}
+.file-row {
+flex-direction: column;
+}
+} */
