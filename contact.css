@@ -307,3 +307,8 @@ form button {
     font-size: 14px;
 }
 
+.footer-col p {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
