@@ -129,3 +129,71 @@ a li {
     font-size: 40px;
     margin-bottom: 10px;
 }
+
+
+/* CONTACT SECTION */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    margin: 40px auto;
+    width: 90%;
+    padding: 40px;
+    gap: 40px;
+    border-radius: 12px;
+}
+
+.contact-left h2, .contact-right h2 {
+    margin-bottom: 15px;
+}
+
+.info-box {
+    margin: 20px 0;
+}
+
+.social .icons span {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.social .icons {
+    font-size: 24px;
+    margin-right: 10px;
+    /* color: #007bff; */
+    /* background-color: brown; */
+}
+
+
+
+/* FORM */
+form .row {
+    display: flex;
+    gap: 20px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+form textarea {
+    height: 120px;
+    resize: none;
+}
+
+form button {
+    width: 160px;
+    padding: 12px;
+    background: #6b5df0;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
