@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="so">
+<head>
+    <link rel="stylesheet" href="sendprr.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Send Money — Step 1: Sender</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Send Money</h1>
+      <p class="subtitle">Step 1 of 3 — Sender details</p>
+    </header>
+
+    <nav class="progress">
+      <div class="step active">1<br><span>Sender</span></div>
+      <div class="step">2<br><span>Recipient</span></div>
+      <div class="step">3<br><span>Confirm</span></div>
+    </nav>
+
+    <form class="card form-card" action="step2.html" method="get">
+      <label>
+        Full name
+        <input type="text" placeholder="Magaca buuxa" >
+      </label>
+
+      <label>
+        Phone / Mobile
+        <input type="tel" name="sender_phone" placeholder="+252 6XX XXX XXX" >
+      </label>
+
+      <label>
+        Email (optional)
+        <input type="email" name="sender_email" placeholder="you@example.com">
+      </label>
+
+      <label>
+        ID / Reference (optional)
+        <input type="text" name="sender_id" placeholder="Passport / ID">
+      </label>
+<div class="actions">
+  <a href="sendstep2.html" class="btn primary">Next: Recipient →</a>
+</div>
+
+    <footer class="small-note">
+      <p>Secure transfer • Your data is encrypted</p>
+    </footer>
+  </main>
+</body>
+</html>

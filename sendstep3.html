@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="so">
+<head>
+        <link rel="stylesheet" href="sendprr.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Send Money — Step 3: Confirm</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Send Money</h1>
+      <p class="subtitle">Step 3 of 3 — Review & Confirm</p>
+    </header>
+
+    <nav class="progress">
+      <div class="step">1<br><span>Sender</span></div>
+      <div class="step">2<br><span>Recipient</span></div>
+      <div class="step active">3<br><span>Confirm</span></div>
+    </nav>
+
+    <section class="card summary-card">
+      <h2>Review details</h2>
+      <ul class="summary-list">
+        <li><strong>Sender:</strong> Ali Ahmed</li>
+        <li><strong>Recipient:</strong> Hodan Yusuf</li>
+        <li><strong>Amount:</strong> 100.00 USD</li>
+        <li><strong>Fee:</strong> 2.00 USD</li>
+        <li><strong>Total:</strong> 102.00 USD</li>
+      </ul>
+      <p class="muted">(This summary is a placeholder — wire these values to your backend.)</p>
+    </section>
+
+    <form class="card form-card" action="#" method="post">
+      <label>
+        Enter OTP code
+        <input type="text" name="otp" placeholder="XXXXXX" maxlength="6" required>
+      </label>
+
+      <div class="actions">
+  <a href="index.html" class="btn primary">back →</a>
+</div>
+        <button type="submit" class="btn primary">Confirm & Send</button>
+      </div>
+    </form>
+
+    <footer class="small-note">
+      <p>By confirming you agree to the terms and fees.</p>
+    </footer>
+  </main>
+</body>
+</html>

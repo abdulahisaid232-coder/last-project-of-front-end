@@ -1,0 +1,134 @@
+/* styles.css — common stylesheet for all 3 pages */
+
+/* Reset-ish */
+* { box-sizing: border-box; }
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  background: #f5f7fb;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Layout */
+.container {
+  max-width: 860px;
+  margin: 36px auto;
+  padding: 20px;
+}
+.header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+.subtitle {
+  margin: 6px 0 0;
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+/* Progress bar */
+.progress {
+  display: flex;
+  gap: 12px;
+  margin: 18px 0;
+}
+.progress .step {
+  flex: 1;
+  text-align: center;
+  padding: 10px 8px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(15,23,42,0.04);
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.progress .step span { display:block; font-weight:400; font-size:0.75rem; color:#9ca3af; margin-top:6px; }
+.progress .step.active {
+  background: linear-gradient(90deg,#6d28d9,#8b5cf6);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(99,102,241,0.14);
+}
+
+/* Cards & forms */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 6px 16px rgba(15,23,42,0.04);
+  margin-bottom: 18px;
+}
+
+.form-card label {
+  display: block;
+  font-size: 0.95rem;
+  color: #374151;
+  margin-bottom: 12px;
+}
+.form-card input[type="text"],
+.form-card input[type="tel"],
+.form-card input[type="email"],
+.form-card input[type="number"],
+.form-card select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e6e9ef;
+  margin-top: 8px;
+  font-size: 1rem;
+}
+.form-card .inline {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.form-card .inline input { flex: 1; }
+.form-card .inline select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e6e9ef;
+}
+
+/* Buttons */
+.actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.btn.primary {
+  background: linear-gradient(90deg,#6d28d9,#8b5cf6);
+  color: #fff;
+  box-shadow: 0 6px 18px rgba(139,92,246,0.12);
+}
+.btn.ghost {
+  background: transparent;
+  color: #374151;
+  border: 1px solid #e6e9ef;
+}
+
+/* Summary list */
+.summary-card h2 { margin-top: 0; }
+.summary-list { list-style: none; padding: 0; margin: 8px 0 0; }
+.summary-list li { padding: 8px 0; border-bottom: 1px dashed #eef2ff; font-size: 0.98rem; }
+.muted { color:#6b7280; font-size: 0.9rem; }
+
+/* Small footers */
+.small-note { text-align: center; color:#6b7280; font-size:0.9rem; margin-top: 6px; }
+
+/* Responsive */
+@media (max-width:640px) {
+  .container { padding: 14px; margin: 20px; }
+  .actions { flex-direction: column-reverse; align-items: stretch; }
+  .progress { gap: 8px; }
+}

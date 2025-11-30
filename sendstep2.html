@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="so">
+<head>
+    <link rel="stylesheet" href="sendprr.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Send Money — Step 2: Recipient</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Send Money</h1>
+      <p class="subtitle">Step 2 of 3 — Recipient & Amount</p>
+    </header>
+
+    <nav class="progress">
+      <div class="step">1<br><span>Sender</span></div>
+      <div class="step active">2<br><span>Recipient</span></div>
+      <div class="step">3<br><span>Confirm</span></div>
+    </nav>
+
+    <form class="card form-card" action="step3.html" method="get">
+      <label>
+        Recipient full name
+        <input type="text" name="recipient_name" placeholder="Magaca qaataha" >
+      </label>
+
+      <label>
+        Recipient phone / mobile
+        <input type="tel" name="recipient_phone" placeholder="+252 6XX XXX XXX" >
+      </label>
+
+      <label>
+        Country / City
+        <input type="text" name="recipient_location" placeholder="Magaalada, Dalka" >
+      </label>
+
+      <label>
+        Amount to send
+        <div class="inline">
+          <input type="number" name="amount" min="1" step="0.01" placeholder="0.00" >
+          <select name="currency">
+            <option value="USD">USD</option>
+            <option value="SOS">SOS</option>
+            <option value="EUR">EUR</option>
+          </select>
+        </div>
+      </label>
+
+      <label>
+        Transfer note (optional)
+        <input type="text" name="note" placeholder="Ujeedada lacagta">
+      </label>
+
+    <div class="actions">
+  <a href="sendstep3.html" class="btn primary">Next: Recipient →</a>
+</div>
+    </form>
+
+    <footer class="small-note">
+      <p>Exchange rates applied at payment. Fees may apply.</p>
+    </footer>
+  </main>
+</body>
+</html>
