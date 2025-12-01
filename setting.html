@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    *{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+   background-color: #f0f0f0;
+}
+.container{
+  display: flex;
+}
+.left-bar{
+  position: fixed;
+  width: 20%;
+  height: 100vh;
+  color: black;
+  border-right: 1px solid gray;
+  background-color: rgb(228,242,255);
+}
+.left-bar h2{
+  font-size: 20px;
+}
+.left-bar a{
+  text-decoration: none;
+}
+.pages{
+  display: flex;
+  margin-left: 30px;
+  font-size: 1.1em;
+  align-items: center;
+  align-content: center;
+  margin-top: 100px;
+  gap: 8px;
+  padding: 5px 5px;
+  border-radius: 10px;
+  width: 140px;
+}
+.pages:hover{
+   background-color: white;
+   box-shadow: 5px 5px 5px gray;
+}
+.pages1:hover{
+   background-color: white;
+   box-shadow: 5px 5px 5px white;
+}
+.pages1{
+  display: flex;
+  margin-left: 30px;
+  font-size: 1em;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+  gap: 8px;
+  padding: 5px 5px;
+  border-radius: 10px;
+  width: 170px;
+}
+.left-bar ul a{
+  text-decoration: none;
+}
+.right-bar{
+  width: 78%;
+  margin-left: 20%;
+  height: 160vh;
+}
+.right-bar h1{
+  font-weight: 400;
+  font-size: 50px;
+  margin-left: 20px;
+}
+.form{
+  background-color: white;
+  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px gray;
+}
+.form h3{
+  margin-top: 20px;
+  color: rgb(30, 41, 59);
+  font-weight: 400;
+   font-size: 30px;
+  margin-left: 20px;
+}
+.form h2{
+  color: rgb(30, 41, 59);
+}
+form{
+  padding: 20px;
+}
+button{
+  background-color: blue;
+  padding: 20px 20px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  text-align: center;
+  transition-property: all;
+  transition-duration: 1s;
+}
+button:hover{
+  box-shadow: 5px 5px 5px rgb(33, 33, 33);
+  transform: scale(1.1);
+}
+input{
+  width: 880px;
+  height: 35px;
+  border-radius: 3px;
+  font-size: 0.9em;
+  border: 1px solid rgb(71, 79, 110) ;
+  padding-left: 10px;
+}
+label{
+  color: rgb(71, 79, 110);
+}
+select{
+  width: 900px;
+  height: 30px;
+}
+  </style>
+</head>
+<body>
+   <div class="container">
+    <div class="left-bar">
+      <a href="dashboard.html"><div class="pages">
+        <i class="fa-solid fa-table-cells"></i>
+        <h4>Dashboard<h4>
+      </div></a>
+      <a href="approved-money.html"><div class="pages1">
+        <i class="fa-solid fa-sack-dollar"></i>
+       <h4> Approved money<h4>
+      </div></a>
+      <a href="Disapproved-money.html"><div class="pages1">
+        <i class="fa-solid fa-sack-xmark"></i>
+        <h4>Disapproved-money</h4>
+      </div></a>
+      <a href="Revenue.html"><div class="pages1">
+        <i class="fa-solid fa-chart-line"></i>
+      <h4>Revenue</h4>
+      </div></a>
+      <a href="setting.html"><div class="pages1">
+      <i class="fa-solid fa-gear"></i>
+      <h4>setting</h4>
+      </div></a>
+    </div>
+    <div class="right-bar">
+      <h1>setting</h1>
+      <div class="form">
+        <h3>Account setting</h3>
+        <form>
+          <label>User Name</label><br>
+          <input type="username" placeholder="Enter Username"><br> <br>
+          <label>Email Address</label><br>
+          <input type="email" placeholder="Enter Email"><br><br> <br>
+          <h2>Password Change</h2><br>
+          <label>Current Password</label><br>
+          <input type="password" placeholder="Current password"><br><br>
+          <label>New Password</label><br>
+          <input type="password" placeholder="New password"><br><br>
+          <label>Confirm password</label><br>
+          <input type="password" placeholder="Confirm password"><br><br>
+          <h2>System Preference</h2><br>
+          <label>Theme</label><br>
+          <select name="" id="">
+            <option value=""></option>
+            <option value="text">light</option>
+            <option value="text">black</option>
+          </select><br><br>
+          <h2>Language</h2><br>
+          <label>Languag</label><br>
+          <select name="" id="">
+            <option value=""></option>
+            <option value="text">English</option>
+            <option value="text">Somali</option>
+          </select><br><br>
+          <button>Save Change</button>
+          
+        </form>
+      </div>
+    </div>
+   </div>
+</body>
+</html>

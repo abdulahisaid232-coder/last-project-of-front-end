@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      *{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+   background-color: #f0f0f0;
+}
+.container{
+  display: flex;
+  
+}
+.left-bar{
+  position: fixed;
+  width: 20%;
+  height: 100vh;
+  border-right: 1px solid gray;
+  background-color: rgb(228,242,255);
+  color: black;
+}
+.left-bar h2{
+  font-size: 20px;
+}
+.left-bar a{
+  text-decoration: none;
+}
+.right-bar{
+  width: 100%;
+  margin-left: 20%;
+  height: 100vh;
+}
+.pages{
+  display: flex;
+  margin-left: 30px;
+  font-size: 1.1em;
+  align-items: center;
+  align-content: center;
+  margin-top: 100px;
+  gap: 8px;
+  padding: 5px 5px;
+  border-radius: 10px;
+  width: 140px;
+}
+.pages:hover{
+ background-color: white;
+ box-shadow: 5px 5px 5px  wheat;
+}
+.pages1:hover{
+ background-color: white;
+ box-shadow: 5px 5px 5px  gray;
+}
+.pages1{
+  display: flex;
+  margin-left: 30px;
+  font-size: 1em;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
+  gap: 8px;
+  padding: 5px 5px;
+  border-radius: 10px;
+  width: 170px;
+}
+.left-bar ul a{
+  text-decoration: none;
+}
+
+.top{
+  display: flex;
+}
+.top a{
+  text-decoration: none;
+}
+.center{
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  margin: 20px 20px;
+  border-radius: 20px;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.center:hover{
+  box-shadow: 5px 5px 5px gray;
+  transform: scale(1.1);
+}
+.center h3{
+  text-align: center;
+  color: green;
+  padding-top:20px ;
+  font-size: 30px;
+}
+.center p{
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+}
+.bottom{
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 15px;
+  width: 610px;
+}
+.bottom h1{
+  padding: 10px;
+  color: black;
+  font-size: 17px;
+}
+table{
+  overflow: hidden;
+  border-collapse:collapse;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: white;
+}
+table thead th {
+  padding: 10px 20px 10px ;
+  color: black;
+  font-size: 13px;
+}
+table tbody td{
+  padding: 10px 30px 10px 50px;
+  color: black;
+  font-size: 15px;
+}
+.left{
+    background-color: white;
+  box-shadow: 5px 5px 5px gray;
+  width: 300px;
+  height: 160px;
+  margin-top: -227px;
+  margin-left: 650px;
+  padding: 10px 5px;
+  border-radius: 20px;
+}
+.left h1{
+  color: black;
+  padding-left: 10px;
+  font-size: 1.5em;
+}
+.left-kor{
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  padding: 30px 20px;
+}
+.right{
+  background-color: white;
+  box-shadow: 5px 5px 5px gray;
+  width: 300px;
+  height: 160px;
+  margin-top: 20px;
+  margin-left: 650px;
+  padding: 10px 5px;
+  border-radius: 20px;
+}
+.right h1{
+  padding-left: 10px;
+  font-size: 1.5em;
+  color: black;
+}
+.right-kor{
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  padding: 30px 20px;
+}
+.divo h2{
+  padding: 3px;
+}
+#divo h2{
+  padding: 3px;
+}
+.hello h3{
+  padding: 5px;
+}
+.charts{
+   background-color: white;
+  box-shadow: 5px 5px 5px gray;
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-top: -120px;
+}
+.left-chart{
+  display: flex;
+  justify-content: space-around;
+  color: black;
+}
+.charts h1{
+  color: black;
+  padding: 10px;
+}
+.pai{
+  padding: 10px;
+  margin-left: 10px;
+  width: 100%;
+}
+.pai p{
+  padding: 10px;
+}
+.pei{
+  width:200px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  background: conic-gradient(
+  rgb(59,137,225) 0% 60%,
+  rgb(27,54,89) 60% 80%,
+  rgb(33,67,113) 80% 100%
+ );
+}
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-bar">
+      <a href="dashboard.html"><div class="pages">
+        <i class="fa-solid fa-table-cells"></i>
+        <h4>Dashboard</h4>
+      </div></a>
+      <a href="approved-money.html"><div class="pages1">
+        <i class="fa-solid fa-sack-dollar"></i>
+       <h4> Approved money</h4>
+      </div></a>
+      <a href="Disapproved-money.html"><div class="pages1">
+        <i class="fa-solid fa-sack-xmark"></i>
+        <h4>Disapproved-money</h4>
+      </div></a>
+      <a href="Revenue.html"><div class="pages1">
+        <i class="fa-solid fa-chart-line"></i>
+      <h4>Revenue</h4>
+      </div></a>
+      <a href="setting.html"><div class="pages1">
+      <i class="fa-solid fa-gear"></i>
+      <h4>setting</h4>
+      </div></a>
+    </div>
+    <div class="right-bar">
+         <div class="top">
+      <div class="center">
+        <p>Revenue Todey</p>
+        <h3>$320</h3>
+      </div>
+     <div class="center">
+        <p>Revenue this week</p>
+        <h3>$1,860</h3>
+      </div></a>
+      <div class="center">
+        <p>Revenue this month</p>
+        <h3>$8,560</h3>
+      </div>
+      <div class="center">
+        <p>Revenue this Year</p>
+        <h3>$102,430</h3>
+      </div>
+      </div>
+      <div class="bottom">
+      <h1>Recent Revenue Transaction</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Transaction ID</th>
+            <th>Costomer</th>
+            <th>Amount</th>
+            <th>Fee collected</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TRX16477</td>
+            <td>ahmed</td>
+            <td style="color: green;">$420</td>
+            <td>$8</td>
+          </tr>
+          <tr>
+            <td>TRX62148</td>
+            <td>Doni-B</td>
+            <td style="color: green;">$150</td>
+            <td>$3</td>
+          </tr>
+          <tr>
+            <td>TRX617729</td>
+            <td>xassan</td>
+            <td style="color: green;">$350</td>
+            <td>$7</td>
+          </tr>
+          <tr>
+            <td>TRX62278</td>
+            <td>Lamela</td>
+            <td style="color: green;">$200</td>
+            <td>$5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      <div class="left">
+      <h1>Top countries/Location</h1>
+      <div class="left-kor">
+        <div class="divo">
+          <h2>USA</h2>
+          <h2>UK</h2>
+          <h2>Canada</h2>
+        </div>
+        <div id="divo">
+          <h2>$1,200</h2>
+          <h2>$4,100</h2>
+          <h2>$6,300</h2>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <h1>Top Paying Customer</h1>
+      <div class="right-kor">
+        <div class="hello">
+          <h3>ahmed</h3>
+          <h3>xassan</h3>
+          <h3>Lamela</h3>
+        </div>
+        <div class="hello">
+          <h3 style="color: green;">$8</h3>
+          <h3 style="color: green;">$7</h3>
+          <h3 style="color: green;">$5</h3>
+        </div>
+      </div>
+    </div>
+    <div class="charts">
+      <h1>Revenue By Source</h1>
+      <div class="left-chart">
+       <div class="pai">
+        <p>Transaction Fees : $6,100</p>
+        <p>Service Fees : $1,899</p>
+        <p>Payout charges Fees : $550</p>
+       </div>
+       <div class="pei"></div>
+        </div>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

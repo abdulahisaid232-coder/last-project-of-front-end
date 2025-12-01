@@ -10,24 +10,28 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
- 
+  
   <div class="container">
     <div class="left-bar">
       <a href="dashboard.html"><div class="pages">
         <i class="fa-solid fa-table-cells"></i>
-        <p>Dashboard</p>
+        <h4>Dashboard<h4>
       </div></a>
       <a href="approved-money.html"><div class="pages1">
         <i class="fa-solid fa-sack-dollar"></i>
-       <h4> Approved money</h4>
+       <h4> Approved money<h4>
       </div></a>
       <a href="Disapproved-money.html"><div class="pages1">
         <i class="fa-solid fa-sack-xmark"></i>
-        <p>Disapproved-money</p>
+        <h4>Disapproved-money</h4>
       </div></a>
-      <a href="Help-center.html"><div class="pages1">
-        <i class="fa-solid fa-headset"></i>
-      <p>  Help center </p>
+      <a href="Revenue.html"><div class="pages1">
+        <i class="fa-solid fa-chart-line"></i>
+      <h4>Revenue</h4>
+      </div></a>
+      <a href="setting.html"><div class="pages1">
+      <i class="fa-solid fa-gear"></i>
+      <h4>setting</h4>
       </div></a>
     </div>
     <div class="right-bar">
@@ -37,13 +41,13 @@
         <p>Total Transfer money</p>
       </div></a>
       <a href="Disapproved-money.html"><div class="center">
-        <h3>800</h3>
-        <p>pending monet</p>
+        <h3 style="color: orangered;">800</h3>
+        <p>pending Transfer</p>
       </div></a>
-      <div class="center">
+      <a href="Revenue.html"><div class="center">
         <h3>8,450</h3>
         <p>Total Revenue</p>
-      </div>
+      </div></a>
       </div>
       <div class="bottom">
         <h1>Recent Transaction</h1>
@@ -51,54 +55,70 @@
           <thead>
             <tr>
               <th>Transaction ID</th>
-              <th>Sender</th>
-              <th>Receiver</th>
+              <th>Recipient</th>
               <th>Amount</th>
+              <th>Card Name</th>
               <th>Status</th>
               <th>Date</th>
+              <th>Active</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>TRX123456</td>
               <td>ahmed</td>
-              <td>yasmin</td>
               <td>$350.00</td>
-              <td>completed</td>
+              <td>Master Card</td>
+              <td> <span class="status completed">completed</span> </td>
               <td>2025-02-29</td>
+              <td><i class="fa-solid fa-pen"></i><i class="fa-regular fa-trash-can"></i></td>
             </tr>
             <tr>
               <td>TRX2401</td>
               <td>yasir</td>
-              <td>Muno</td>
               <td>$500.00</td>
-              <td>pending</td>
+              <td>Visa</td>
+              <td><span class="status pending">pending</span></td>
               <td>2025-04-09</td>
+              <td><i class="fa-solid fa-pen"></i><i class="fa-regular fa-trash-can"></i></td>
             </tr>
             <tr>
               <td>TRX3686</td>
               <td>maanka</td>
-              <td>yusro</td>
               <td>$900.00</td>
-              <td>Failed</td>
+              <td>Paypal</td>
+              <td><span class="status failed">Failed</span></td>
               <td>2025-11-02</td>
+              <td><i class="fa-solid fa-pen"></i><i class="fa-regular fa-trash-can"></i></td>
             </tr>
             <tr>
               <td>TRX93145</td>
               <td>Nasrudiin</td>
-              <td>Iqro</td>
               <td>$400.00</td>
-              <td>completed</td>
+              <td>American Express</td>
+              <td><span class="status completed">completed</span></td>
               <td>2025-06-14</td>
+              <td><i class="fa-solid fa-pen"></i><i class="fa-regular fa-trash-can"></i></i></td>
             </tr>
           </tbody>
         </table>
       </div>
-      <div class="" id="xob">
+      <div id="xob">
+        <div class="bar-chart">
+          <p>900</p>
+          <p>500</p>
+          <p>700</p>
+          <p>300</p>
+          <p>0</p>
+        </div>
+        <div class="bar-right-chart">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
         <div class="bar4"></div>
+        <div class="bar5"></div>
+        <div class="bar6"></div>
+        </div>
       </div>
     </div>
   </div>

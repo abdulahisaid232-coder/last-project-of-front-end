@@ -11,11 +11,11 @@
       *{
   padding: 0px;
   margin: 0px;
-  overflow: hidden;
+  /* overflow: hidden; */
 
 }
 body{
-   background-color: rgb(7, 11, 24);
+   background-color: #f0f0f0;
 }
 .container{
   display: flex;
@@ -25,7 +25,8 @@ body{
   position: fixed;
   width: 20%;
   height: 100vh;
-  border-right: 1px solid gray;
+  background-color: rgb(228,242,255);
+  color: black;
 }
 .left-bar h2{
   font-size: 20px;
@@ -34,28 +35,43 @@ body{
   text-decoration: none;
 }
 .right-bar{
-  width: 79%;
+  width: 77%;
   margin-left: 20%;
-  height: 150vh;
+  height: 100vh;
 }
 .pages{
   display: flex;
   margin-left: 30px;
-  color: gray;
+  /* color: black; */
   font-size: 1.1em;
-  padding-top: 100px;
+  align-items: center;
+  align-content: center;
+  margin-top: 100px;
   gap: 8px;
+  padding: 5px 5px;
+  border-radius: 10px;
+  width: 140px;
 }
-.pages i{
-  background-color: transparent;
+.pages:hover{
+ background-color: wheat;
+ box-shadow: 5px 5px 5px gray;
+}
+.pages1:hover{
+ background-color: wheat;
+ box-shadow: 5px 5px 5px gray;
 }
 .pages1{
   display: flex;
   margin-left: 30px;
-  color: gray;
+  /* color: gray; */
   font-size: 1em;
-  padding-top: 50px;
+  align-items: center;
+  align-content: center;
+  margin-top: 20px;
   gap: 8px;
+  padding: 5px 5px;
+  border-radius: 10px;
+  width: 170px;
 }
 .left-bar ul a{
   text-decoration: none;
@@ -70,20 +86,68 @@ body{
 .center{
   width: 200px;
   height: 100px;
-  background-color: rgb(28, 32, 43);
+  background-color: white;
   margin: 20px 20px;
   border-radius: 20px;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.center:hover{
+  box-shadow: 5px 5px 5px gray;
+  transform: scale(1.1);
 }
 .center h3{
   text-align: center;
-  color: white;
+  color: green;
   padding-top:20px ;
   font-size: 30px;
 }
 .center p{
-  color: gray;
+  color: black;
   text-align: center;
   padding-top: 10px;
+}
+.bottom{
+  margin-top: 10px;
+  margin-left: 20px;
+  border-radius: 15px;
+  width: 100%;
+}
+.bottom h1{
+  padding: 10px;
+  color: black;
+  font-size: 17px;
+}
+table{
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+table th {
+  text-align: left;
+  padding: 15px;
+  color: black;
+}
+table td {
+ padding: 15px;
+ border-bottom: 1px solid #e2e8f0;
+ color: black;
+}
+table tbody tr:last-child{
+  border-bottom: none;
+}
+.status {
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 17px;
+  color: white;
+  }
+  .pending{
+    background-color: transparent;
+    border: 2px solid #a4300f;
+  color: #a4300f;
+  border-radius: 8px;
 }
     </style>
 </head>
@@ -92,7 +156,7 @@ body{
     <div class="left-bar">
       <a href="dashboard.html"><div class="pages">
         <i class="fa-solid fa-table-cells"></i>
-        <p>Dashboard</p>
+        <h4>Dashboard</h4>
       </div></a>
       <a href="approved-money.html"><div class="pages1">
         <i class="fa-solid fa-sack-dollar"></i>
@@ -100,11 +164,15 @@ body{
       </div></a>
       <a href="Disapproved-money.html"><div class="pages1">
         <i class="fa-solid fa-sack-xmark"></i>
-        <p>Disapproved-money</p>
+        <h4>Disapproved-money</h4>
       </div></a>
-      <a href="Help-center.html"><div class="pages1">
-        <i class="fa-solid fa-headset"></i>
-      <p>  Help center </p>
+      <a href="Revenue.html"><div class="pages1">
+       <i class="fa-solid fa-chart-line"></i>
+      <h4>Revenue</h4>
+      </div></a>
+      <a href="setting.html"><div class="pages1">
+      <i class="fa-solid fa-gear"></i>
+      <h4>setting</h4>
       </div></a>
     </div>
       <div class="divider"></div>
@@ -115,16 +183,64 @@ body{
         <p>Total Transfer money</p>
       </div></a>
       <a href="Disapproved-money.html"><div class="center">
-        <h3>800</h3>
+        <h3 style="color: #a4300f;">800</h3>
         <p>pending monet</p>
       </div></a>
-      <div class="center">
+      <a href="Revenue.html"><div class="center">
         <h3>8,450</h3>
         <p>Total Revenue</p>
+      </div></a>
       </div>
+      <div class="bottom">
+        <h1>Recent Appproval money</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Sender</th>
+              <th>Receiver</th>
+              <th>Amount</th>
+              <th>status</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>C2377792</td>
+              <td>cabdalla</td>
+              <td>zakaria</td>
+              <td>$900.00</td>
+            <td><span class="status pending">pending</span></td>
+              <td>2025-07-14</td>
+            </tr>
+            <tr>
+              <td>C2562990</td>
+              <td>A.hakiin</td>
+              <td>deeQo</td>
+              <td>$800.00</td>
+             <td><span class="status pending">pending</span></td>
+              <td>2025-09-11</td>
+            </tr>
+            <tr>
+              <td>C206784</td>
+              <td>ma'iZa</td>
+              <td>Dayax</td>
+              <td>$12,000</td>
+             <td><span class="status pending">pending</span></td>
+              <td>2025-04-30</td>
+            </tr>
+            <tr>
+              <td>C1240236</td>
+              <td>Mohamed</td>
+              <td>Faatma</td>
+              <td>$10,000</td>
+              <td><span class="status pending">pending</span></td>
+              <td>2025-05-01</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
- 
 </body>
 </html>
